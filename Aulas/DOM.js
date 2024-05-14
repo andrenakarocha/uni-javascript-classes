@@ -35,3 +35,12 @@ function manipulate_CSS () {
     elem.style.color = 'red'; // Modifica o estilo do elemento
     elem.style.fontSize = '20px'; // Modifica o estilo do elemento
 }
+
+// EVENTOS COMUNS: Click, Mouseover, Keydown, Submit, Load.
+function event_listener () {
+    const elem = document.querySelector('#elem'); // Seleciona o elemento
+    elem.addEventListener('click', theFunction); // Assim que clicarem no elemento, a função é executada
+    elem.removeEventListener('cliclk', theFunction); // Remove o evento.
+}
+
+// EVENTOS COM ATRIBUTOS HTML: onMouseOver, onMouseOut, onClick
